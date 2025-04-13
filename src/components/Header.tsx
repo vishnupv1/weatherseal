@@ -17,11 +17,13 @@ const Header = () => {
     <header className="bg-gradient-to-r from-purple-200/30 via-pink-100/30 to-white/30 backdrop-blur-lg shadow-md sticky top-0 z-50 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
         <div className="text-2xl flex items-center font-bold text-primary">
-          <img src={weatherseal} className="w-20 h-20" alt="logo" />
-          <span className="text-primary mr-2 hidden md:inline">
-            Weatherseal
-          </span>
-          <span className="text-secondary hidden md:inline">Interiors</span>
+          <img
+            src={weatherseal}
+            className="w-20 h-20 hidden md:inline"
+            alt="logo"
+          />
+          <span className="text-primary mr-2 ">Weatherseal</span>
+          <span className="text-secondary ">Interiors</span>
         </div>
 
         <nav className="hidden md:flex gap-6 text-teal-600">
