@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 const ContactPage = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [status, setStatus] = useState<string | null>(null);
+  const [isSending, setIsSending] = useState(false); // 🔁 New state
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSending(true);
 
     if (formRef.current) {
       emailjs
@@ -23,16 +25,28 @@ const ContactPage = () => {
             formRef.current?.reset();
           },
           () => {
-            setStatus("Failed to send message.Please try again.");
+            setStatus("Failed to send message. Please try again.");
           }
-        );
+        )
+        .finally(() => {
+          setIsSending(false);
+        });
     }
   };
 
   return (
-    <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-teal-100 min-h-screen py-20 px-4">
+    <div className="relative bg-gradient-to-br from-blue-100 via-purple-100 to-teal-100 min-h-screen py-20 px-4">
+      {/* 🔁 Full screen loader */}
+      {isSending && (
+        <div className="absolute inset-0 z-50 bg-white bg-opacity-50 backdrop-blur-sm flex items-center justify-center">
+          <div className="w-16 h-16 border-4 border-teal-600 border-t-transparent rounded-full animate-spin" />
+        </div>
+      )}
+
       <motion.div
-        className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-10"
+        className={`max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-10 transition-all duration-300 ${
+          isSending ? "blur-sm" : ""
+        }`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -94,8 +108,9 @@ const ContactPage = () => {
             <button
               type="submit"
               className="bg-teal-600 text-white px-8 py-3 rounded-full hover:bg-teal-700 transition"
+              disabled={isSending}
             >
-              Send Message
+              {isSending ? "Sending..." : "Send Message"}
             </button>
           </div>
         </form>
