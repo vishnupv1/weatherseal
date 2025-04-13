@@ -33,9 +33,10 @@ const TestimonialSection = () => {
           transition={{ duration: 0.6 }}
           className="text-3xl sm:text-4xl font-bold text-[#00838f] mb-10"
         >
-          What Our Customers Say
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            What Our <span className="text-teal-600">Customers </span> Say
+          </h1>
         </motion.h2>
-
         <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 max-w-6xl mx-auto">
           {testimonials.map((t, index) => (
             <motion.div
