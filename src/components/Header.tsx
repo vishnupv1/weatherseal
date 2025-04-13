@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import weatherseal from "../assets/images/weatherseal.jpg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,24 +30,36 @@ const Header = () => {
         </div>
 
         <nav className="hidden md:flex gap-6 text-primary">
-          <a
-            href="#features"
+          <Link
+            to="/"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
+            Home
+          </Link>
+          <Link
+            to="/features"
             className="hover:text-secondary text-primary transition-colors duration-200"
           >
             Features
-          </a>
-          <a
-            href="#products"
+          </Link>
+          <Link
+            to="/products"
             className="hover:text-secondary text-primary transition-colors duration-200"
           >
             Products
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="hover:text-secondary text-primary transition-colors duration-200"
           >
             Contact
-          </a>
+          </Link>
+          <Link
+            to="/testimonials"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
+            Testimonials
+          </Link>
         </nav>
         <button
           className="md:hidden text-gray-700"
