@@ -45,7 +45,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 text-xl transition-colors duration-200 
-             focus:outline-none focus:ring-0 focus:ring-0 focus:border-0"
+             focus:outline-none focus:ring-0  focus:border-0"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <FiAlignLeft size={20} /> : <FiAlignJustify size={20} />}
