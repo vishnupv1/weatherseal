@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import LandingSection from "./components/Landing";
 import TestimonialSection from "./components/Testimonials";
-import ContactPage from "./components/Testimonials";
+import ContactPage from "./components/Contact";
 import ProductsPage from "./components/Advantages";
 import FeaturesPage from "./components/Advantages";
 import Footer from "./components/Footer";
