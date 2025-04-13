@@ -71,32 +71,30 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden px-4 pb-4">
           <Link
-            to="/"
-            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
-          >
-            Home
-          </Link>
-          <Link
             to="/features"
-            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
+            className="block py-2 text-primary"
+            onClick={() => setMenuOpen(false)}
           >
             Features
           </Link>
           <Link
             to="/products"
-            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
+            className="block py-2 text-primary"
+            onClick={() => setMenuOpen(false)}
           >
             Products
           </Link>
           <Link
             to="/contact"
-            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
+            className="block py-2 text-primary"
+            onClick={() => setMenuOpen(false)}
           >
             Contact
           </Link>
           <Link
             to="/testimonials"
-            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
+            className="block py-2 text-primary"
+            onClick={() => setMenuOpen(false)}
           >
             Testimonials
           </Link>
