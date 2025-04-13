@@ -71,29 +71,36 @@ const Header = () => {
       {menuOpen && (
         <div className="md:hidden px-4 pb-4">
           <Link
+            to="/"
+            className="block py-2 text-teal-600"
+            onClick={() => setMenuOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
             to="/features"
-            className="block py-2 text-primary"
+            className="block py-2 text-teal-600"
             onClick={() => setMenuOpen(false)}
           >
             Features
           </Link>
           <Link
             to="/products"
-            className="block py-2 text-primary"
+            className="block py-2 text-teal-600"
             onClick={() => setMenuOpen(false)}
           >
             Products
           </Link>
           <Link
             to="/contact"
-            className="block py-2 text-primary"
+            className="block py-2 text-teal-600"
             onClick={() => setMenuOpen(false)}
           >
             Contact
           </Link>
           <Link
             to="/testimonials"
-            className="block py-2 text-primary"
+            className="block py-2 text-teal-600"
             onClick={() => setMenuOpen(false)}
           >
             Testimonials
