@@ -24,13 +24,13 @@ const Header = () => {
           <span className="text-secondary hidden md:inline">Interiors</span>
         </div>
 
-        <nav className="hidden md:flex gap-6 text-primary">
+        <nav className="hidden md:flex gap-6 text-teal-600">
           {["/", "/features", "/products", "/contact", "/testimonials"].map(
             (path, idx) => (
               <Link
                 key={path}
                 to={path}
-                className="hover:text-secondary text-primary transition-colors duration-200"
+                className="hover:text-secondary text-teal-600 transition-colors duration-200"
               >
                 {
                   ["Home", "Features", "Products", "Contact", "Testimonials"][
