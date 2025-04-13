@@ -56,7 +56,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4">
+        <div className="md:hidden fixed top-24 left-0 w-full bg-white/90 backdrop-blur-md z-40 px-4 pb-4">
           {["/", "/features", "/products", "/contact", "/testimonials"].map(
             (path, idx) => (
               <Link
