@@ -1,20 +1,15 @@
 import { useState, useEffect } from "react";
-import weatherseal from "../assets/images/weatherseal.jpg";
 import { Link } from "react-router-dom";
+import { FiAlignLeft, FiAlignJustify } from "react-icons/fi";
+import weatherseal from "../assets/images/weatherseal.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Effect to lock scroll when the mobile menu is open
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden"; // Disable scroll when menu is open
-    } else {
-      document.body.style.overflow = "auto"; // Enable scroll when menu is closed
-    }
-
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
     return () => {
-      document.body.style.overflow = "auto"; // Clean up when the component is unmounted or menu is closed
+      document.body.style.overflow = "auto";
     };
   }, [menuOpen]);
 
@@ -30,81 +25,50 @@ const Header = () => {
         </div>
 
         <nav className="hidden md:flex gap-6 text-primary">
-          <Link
-            to="/"
-            className="hover:text-secondary text-primary transition-colors duration-200"
-          >
-            Home
-          </Link>
-          <Link
-            to="/features"
-            className="hover:text-secondary text-primary transition-colors duration-200"
-          >
-            Features
-          </Link>
-          <Link
-            to="/products"
-            className="hover:text-secondary text-primary transition-colors duration-200"
-          >
-            Products
-          </Link>
-          <Link
-            to="/contact"
-            className="hover:text-secondary text-primary transition-colors duration-200"
-          >
-            Contact
-          </Link>
-          <Link
-            to="/testimonials"
-            className="hover:text-secondary text-primary transition-colors duration-200"
-          >
-            Testimonials
-          </Link>
+          {["/", "/features", "/products", "/contact", "/testimonials"].map(
+            (path, idx) => (
+              <Link
+                key={path}
+                to={path}
+                className="hover:text-secondary text-primary transition-colors duration-200"
+              >
+                {
+                  ["Home", "Features", "Products", "Contact", "Testimonials"][
+                    idx
+                  ]
+                }
+              </Link>
+            )
+          )}
         </nav>
+
+        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden text-gray-700 text-3xl focus:outline-none focus:ring-2 focus:ring-none transition-colors duration-200"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          {menuOpen ? <FiAlignLeft /> : <FiAlignJustify />}
         </button>
       </div>
+
       {menuOpen && (
         <div className="md:hidden px-4 pb-4">
-          <Link
-            to="/"
-            className="block py-2 text-teal-600"
-            onClick={() => setMenuOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/features"
-            className="block py-2 text-teal-600"
-            onClick={() => setMenuOpen(false)}
-          >
-            Features
-          </Link>
-          <Link
-            to="/products"
-            className="block py-2 text-teal-600"
-            onClick={() => setMenuOpen(false)}
-          >
-            Products
-          </Link>
-          <Link
-            to="/contact"
-            className="block py-2 text-teal-600"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </Link>
-          <Link
-            to="/testimonials"
-            className="block py-2 text-teal-600"
-            onClick={() => setMenuOpen(false)}
-          >
-            Testimonials
-          </Link>
+          {["/", "/features", "/products", "/contact", "/testimonials"].map(
+            (path, idx) => (
+              <Link
+                key={path}
+                to={path}
+                className="block py-2 text-teal-600"
+                onClick={() => setMenuOpen(false)}
+              >
+                {
+                  ["Home", "Features", "Products", "Contact", "Testimonials"][
+                    idx
+                  ]
+                }
+              </Link>
+            )
+          )}
         </div>
       )}
     </header>
