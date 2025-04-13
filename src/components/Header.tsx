@@ -70,15 +70,36 @@ const Header = () => {
       </div>
       {menuOpen && (
         <div className="md:hidden px-4 pb-4">
-          <a href="#features" className="block py-2 text-primary">
+          <Link
+            to="/"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
+            Home
+          </Link>
+          <Link
+            to="/features"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
             Features
-          </a>
-          <a href="#products" className="block py-2 text-primary">
+          </Link>
+          <Link
+            to="/products"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
             Products
-          </a>
-          <a href="#contact" className="block py-2 text-primary">
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
             Contact
-          </a>
+          </Link>
+          <Link
+            to="/testimonials"
+            className="hover:text-secondary text-primary transition-colors duration-200"
+          >
+            Testimonials
+          </Link>
         </div>
       )}
     </header>
