@@ -44,10 +44,11 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 text-3xl focus:outline-none focus:ring-2 focus:ring-none transition-colors duration-200"
+          className="md:hidden text-gray-700 text-xl transition-colors duration-200 
+             focus:outline-none focus:ring-0 focus:ring-0 focus:border-0"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {menuOpen ? <FiAlignLeft /> : <FiAlignJustify />}
+          {menuOpen ? <FiAlignLeft size={20} /> : <FiAlignJustify size={20} />}
         </button>
       </div>
 
