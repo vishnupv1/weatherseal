@@ -32,7 +32,7 @@ const EmployeeEngagement: React.FC = () => {
   return (
     <div className="p-4 sm:p-8">
       <h2 className="text-4xl font-bold flex justify-center text-[#00838f] mb-12 drop-shadow-lg">
-        Why Choose <span className="text-secondary">UPVC?</span>
+        Why Choose <span className="text-secondary">UPVC</span>?
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card, index) => (
