@@ -72,31 +72,31 @@ const Header = () => {
         <div className="md:hidden px-4 pb-4">
           <Link
             to="/"
-            className="hover:text-secondary text-primary transition-colors duration-200"
+            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
           >
             Home
           </Link>
           <Link
             to="/features"
-            className="hover:text-secondary text-primary transition-colors duration-200"
+            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
           >
             Features
           </Link>
           <Link
             to="/products"
-            className="hover:text-secondary text-primary transition-colors duration-200"
+            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
           >
             Products
           </Link>
           <Link
             to="/contact"
-            className="hover:text-secondary text-primary transition-colors duration-200"
+            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
           >
             Contact
           </Link>
           <Link
             to="/testimonials"
-            className="hover:text-secondary text-primary transition-colors duration-200"
+            className="hover:text-secondary block py-2 text-primary text-primary transition-colors duration-200"
           >
             Testimonials
           </Link>
