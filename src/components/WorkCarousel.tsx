@@ -22,7 +22,7 @@ const WorkCarousel = () => {
     <div className="w-full max-w-screen-xl mx-auto overflow-hidden rounded-xl p-4">
       {/* Title Section */}
       <div className="text-center mb-4">
-        <h2 className="text-3xl font-semibold text-teal-600">Our Works</h2>
+        <h2 className="text-4xl font-bold text-teal-600">Our Works</h2>
         <p className="text-lg text-gray-600">
           Explore some of our amazing projects
         </p>

@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import Features from "./Features";
+// import Features from "./Features";
 import WorkCarousel from "./WorkCarousel";
+import EmployeeEngagement from "./Advantages";
 
 const LandingSection = () => {
   return (
-    <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 opacity-90">
+    <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-teal-100 opacity-90">
       <section className="relative py-20 px-4 text-center text-secondary overflow-hidden">
         <div className="absolute inset-0  -z-10" />
 
@@ -30,7 +31,8 @@ const LandingSection = () => {
         </div>
       </section>
       <WorkCarousel />
-      <Features />
+      <EmployeeEngagement />
+      {/* <Features /> */}
     </div>
   );
 };
