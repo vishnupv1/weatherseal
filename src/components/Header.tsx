@@ -5,6 +5,20 @@ import weatherseal from "../assets/images/weatherseal.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // run on mount to check if already scrolled
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
@@ -14,7 +28,13 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <header className="bg-gradient-to-r from-purple-200/30 via-pink-100/30 to-white/30 backdrop-blur-lg shadow-md sticky top-0 z-50 border-b border-white/20">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-gradient-to-r from-purple-200/30 via-pink-100/30 to-white/30 backdrop-blur-lg shadow-md border-b border-white/20"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-24">
         <div className="text-2xl flex items-center font-bold text-primary">
           <img
@@ -22,8 +42,8 @@ const Header = () => {
             className="w-20 h-20 hidden md:inline"
             alt="logo"
           />
-          <span className="text-primary mr-2 ">Weatherseal</span>
-          <span className="text-secondary ">Interiors</span>
+          <span className="text-primary mr-2">Weatherseal</span>
+          <span className="text-secondary">Interiors</span>
         </div>
 
         <nav className="hidden md:flex gap-6 text-teal-600">
@@ -44,11 +64,9 @@ const Header = () => {
           )}
         </nav>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-gray-700 text-xl transition-colors duration-200
-             focus:outline-none focus:ring-0 focus:border-0
-             bg-transparent active:bg-transparent focus:bg-transparent hover:bg-transparent"
+             focus:outline-none bg-transparent"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <FiAlignLeft size={24} /> : <FiAlignJustify size={24} />}

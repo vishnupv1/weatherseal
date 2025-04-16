@@ -9,7 +9,7 @@
   font-weight: 400;
 
   color: #213547;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,10 +30,9 @@ a:hover {
 body {
   margin: 0;
   display: block;
-  /* min-width: 100vw; */
   min-height: 100vh;
   color: inherit;
-  background-color: inherit;
+  /* background-color: inherit; */
 }
 
 h1 {
