@@ -24,6 +24,17 @@ const LandingSection = () => {
           Energy efficient, durable, and stylish UPVC windows and doors crafted
           to perfection.
         </p>
+        <p className="text-gray-600 mt-4">
+          Located in Panamaram, Wayanad, Kerala, we are proud to be the No.1
+          provider of UPVC solutions. Our products are designed to enhance the
+          aesthetics and functionality of your spaces.
+        </p>
+        <p className="text-gray-600 mb-6">
+          Our UPVC windows and doors are not just about looks; they are built to
+          Whether you're looking for energy-efficient windows or durable doors,
+          our UPVC offerings are tailored to meet your needs with unmatched
+          quality and style.
+        </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <button className="border border-purple-400 text-purple-600 rounded-full px-6 py-2 hover:bg-purple-50 transition">
             Explore our products

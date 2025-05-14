@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const images = [
-  "https://www.eewindows.com.au/wp-content/uploads/2019/02/What-is-uPVC-and-why-is-it-used-for-doors-and-windows-FEAT.jpg",
-  "https://eumaxupvc.com/images/New/Certificates/designerdoors.png",
-  "https://th.bing.com/th/id/R.bd14aaf74854b8ea16dece887c33cb6d?rik=8Xhh1Vz7jbsiAA&riu=http%3a%2f%2fedamari.com%2fwp-content%2fuploads%2f2017%2f04%2fupwdw.jpg&ehk=1qieFQUrl5BTRGkWvjwgMhsMiNKaYJlEUUZwzy0s4VA%3d&risl=&pid=ImgRaw&r=0",
-  "https://en.lesso.com/blogs/wp-content/uploads/2021/03/all-you-need-to-know-about-upvc-windows.jpg",
-];
+import image1 from "/images/image1.jpg";
+import image2 from "/images/image2.jpg";
+import image3 from "/images/image3.jpg";
+import image4 from "/images/image4.jpg";
+
+const images = [image1, image2, image3, image4];
 
 const WorkCarousel = () => {
   const [index, setIndex] = useState(0);

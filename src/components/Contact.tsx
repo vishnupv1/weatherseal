@@ -59,6 +59,26 @@ const ContactPage = () => {
           out to us!
         </p>
 
+        <p className="text-gray-700 mb-6">
+          Welcome to the No.1 UPVC solution provider in Kerala! Located in the
+          serene district of Wayanad, our Panamaram-based facility is dedicated
+          to delivering top-notch UPVC products that redefine quality and
+          durability. Whether you're looking for windows, doors, or other UPVC
+          solutions, we have you covered.
+        </p>
+        <p className="text-gray-700 mb-6">
+          At our Wayanad facility, we pride ourselves on being the trusted name
+          for UPVC in Kerala. Our Panamaram branch ensures that every product is
+          crafted with precision and care, making us the go-to choice for
+          homeowners and businesses alike.
+        </p>
+        <p className="text-gray-700 mb-6">
+          Discover why we are the No.1 UPVC provider in Kerala. From energy
+          efficiency to unmatched durability, our UPVC solutions are designed to
+          meet your needs. Visit us in Panamaram, Wayanad, and experience the
+          difference today!
+        </p>
+
         <form
           ref={formRef}
           onSubmit={sendEmail}

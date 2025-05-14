@@ -28,10 +28,10 @@ const App = () => {
           position: "fixed",
           bottom: "20px",
           right: "20px",
-          backgroundColor: "teal",
+          backgroundColor: "green",
           borderRadius: "50%",
-          width: "50px",
-          height: "50px",
+          width: "65px",
+          height: "65px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -43,8 +43,8 @@ const App = () => {
           src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/whatsapp.svg"
           alt="WhatsApp"
           style={{
-            width: "30px",
-            height: "30px",
+            width: "40px",
+            height: "40px",
             color: "white",
             filter: "invert(1)",
           }}
