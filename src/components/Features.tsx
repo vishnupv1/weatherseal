@@ -1,5 +1,5 @@
 // src/components/Features.tsx
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const features = [
   {
@@ -16,7 +16,7 @@ const features = [
   },
 ];
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { rotateY: -90, opacity: 0 },
   visible: (i: number) => ({
     rotateY: 0,
@@ -24,7 +24,7 @@ const cardVariants = {
     transition: {
       delay: i * 0.3,
       duration: 0.8,
-      type: "spring",
+      type: "spring" as const,
     },
   }),
 };
