@@ -4,28 +4,28 @@ import { FiStar } from "react-icons/fi";
 
 const testimonials = [
   {
-    name: "Aarav Sharma",
+    name: "Aarav",
     title: "Architect, Urban Designs",
     content:
       "The UPVC windows from Weatherseal Interiors completely transformed our projects. They're sleek, energy-efficient, and our clients love the premium finish!",
     rating: 5,
   },
   {
-    name: "Meera Joshi",
+    name: "Meera",
     title: "Interior Designer, HomeGlow Interiors",
     content:
       "Absolutely impressed with the durability and aesthetics. The installation process was seamless, and the customer service was exceptional. Highly recommend!",
     rating: 5,
   },
   {
-    name: "Rahul Mehta",
+    name: "Rahul",
     title: "Homeowner",
     content:
       "I've noticed a significant drop in outside noise and better insulation since installing their UPVC doors. The quality is outstanding and worth every penny.",
     rating: 5,
   },
   {
-    name: "Priya Patel",
+    name: "Priya",
     title: "Property Developer",
     content:
       "Weatherseal Interiors has been our go-to partner for all UPVC solutions. Their products meet the highest standards and their team is incredibly professional.",
@@ -52,10 +52,10 @@ const TestimonialSection = () => {
             </span>{" "}
             Say
           </h2>
-          
+
           <p className="text-xl text-secondary mb-16 max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our valued customers have to say 
-            about their experience with Weatherseal Interiors.
+            Don't just take our word for it. Here's what our valued customers
+            have to say about their experience with Weatherseal Interiors.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -70,7 +70,10 @@ const TestimonialSection = () => {
                 {/* Rating Stars */}
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <FiStar key={i} className="w-5 h-5 fill-primary text-primary" />
+                    <FiStar
+                      key={i}
+                      className="w-5 h-5 fill-primary text-primary"
+                    />
                   ))}
                 </div>
 
@@ -103,8 +106,8 @@ const TestimonialSection = () => {
               Ready to Experience the Difference?
             </h3>
             <p className="text-secondary mb-6 max-w-2xl mx-auto">
-              Join hundreds of satisfied customers who have transformed their spaces 
-              with our premium UPVC solutions.
+              Join hundreds of satisfied customers who have transformed their
+              spaces with our premium UPVC solutions.
             </p>
             <Link to="/contact">
               <motion.button
