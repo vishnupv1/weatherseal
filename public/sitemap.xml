@@ -6,24 +6,38 @@
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://www.weathersealinteriors.in/</loc>
-    <lastmod>2025-05-14T06:55:32+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://weathersealinteriors.in/</loc>
+    <lastmod>2025-01-14T06:55:32+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://www.weathersealinteriors.in/about</loc>
-    <lastmod>2025-05-01T10:00:00+00:00</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://weathersealinteriors.in/features</loc>
+    <lastmod>2025-01-14T06:55:32+00:00</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.weathersealinteriors.in/contact</loc>
-    <lastmod>2025-04-20T10:00:00+00:00</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://weathersealinteriors.in/products</loc>
+    <lastmod>2025-01-14T06:55:32+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://weathersealinteriors.in/testimonials</loc>
+    <lastmod>2025-01-14T06:55:32+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://weathersealinteriors.in/contact</loc>
+    <lastmod>2025-01-14T06:55:32+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>

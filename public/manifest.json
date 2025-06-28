@@ -1,0 +1,27 @@
+{
+  "name": "Weatherseal Interiors - UPVC Windows & Doors",
+  "short_name": "Weatherseal",
+  "description": "Best UPVC windows and doors in Wayanad, Kerala. Energy-efficient solutions for homes and businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "home", "construction"],
+  "lang": "en",
+  "dir": "ltr"
+} 
