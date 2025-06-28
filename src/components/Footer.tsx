@@ -104,7 +104,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center space-x-6">
               <span className="text-sm text-neutral-400">
-                Made with ❤️ in Wayanad, Kerala
+                Made with ❤️ by thewebro agency, Wayanad, Kerala
               </span>
             </div>
           </div>
