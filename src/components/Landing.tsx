@@ -144,47 +144,6 @@ const LandingSection = () => {
             ))}
           </motion.div>
 
-          <motion.div
-            className="flex justify-center gap-6 flex-wrap"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-          >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 15px 30px rgba(15, 118, 110, 0.3)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-primary text-white font-semibold rounded-xl shadow-enterprise hover:shadow-enterprise-lg hover:bg-primary/90 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden group"
-            >
-              <span className="relative z-10">Explore Our Products</span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "0%" }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.button>
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 15px 30px rgba(15, 118, 110, 0.2)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              onClick={openCatalogDialog}
-              className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden group"
-            >
-              <span className="relative z-10">View Our Portfolio</span>
-              <motion.div
-                className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "0%" }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.button>
-          </motion.div>
-
           {/* Scroll Indicator */}
           <motion.div
             className="mt-16 flex flex-col items-center"
