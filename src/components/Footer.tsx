@@ -5,9 +5,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-display font-semibold text-white mb-4">
-              Weatherseal Interiors
-            </h3>
+            <div className="flex flex-col gap-1">
+              <h3 className="text-xl font-display font-semibold text-white ">
+                Weatherseal Interiors
+              </h3>
+              <p className="text-neutral-300 mb-4 leading-relaxed">
+                Panamaram, Wayanad, Kerala
+              </p>
+            </div>
             <p className="text-neutral-300 mb-4 leading-relaxed">
               Leading provider of premium UPVC windows and doors in Panamaram,
               Wayanad, Kerala. We deliver excellence in every project with
