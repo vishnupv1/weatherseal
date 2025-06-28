@@ -87,7 +87,7 @@ const features = [
 
 const EmployeeEngagement: React.FC = () => {
   return (
-    <div className="bg-gradient-to-br from-light via-white to-neutral-50 py-24 px-4">
+    <div className="bg-gradient-to-br from-light via-white to-neutral-50  py-4 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <motion.div

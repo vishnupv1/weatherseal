@@ -73,7 +73,7 @@ const LandingSection = () => {
         transition={{ type: "spring", stiffness: 150, damping: 15 }}
       />
 
-      <section className="relative py-24 px-4 text-center text-dark overflow-hidden">
+      <section className="relative  py-4 px-4 text-center text-dark overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent -z-10" />
 
         <motion.div
